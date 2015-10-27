@@ -79,7 +79,11 @@ brat.saveToBrat(USER_ID, ANNOTATED_FILE);
 
 ### API
 
-**saveToBrat(userId, path)**
+`callback` is a standard Node.js callback function, with one parameter as the error.
+
+---
+ 
+**saveToBrat(userId, path, callback)**
 
 *Same as above*
 
@@ -112,6 +116,8 @@ Fixes problems with the corpus by detecting and deleting problematic tags
 Checks and removes any duplicate tags from the online corpus
 
 `userId`: User Id
+
+---
 
 ### Todo
 
