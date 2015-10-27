@@ -40,7 +40,7 @@ Example:
 $ brat 1000000 /dropbox/annotated.txt
 ```
 
-Note that running it multiple times will cause duplicate annotations. This is a known issue and the current workaround is to run a command to delete all the tags and add them back again.
+Don't worry about running the command multiple times and polluting the corpus, the script will intelligently ignore duplicated tags.
 
 ### Parameters
 
