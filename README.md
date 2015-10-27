@@ -107,6 +107,12 @@ Fixes problems with the corpus by detecting and deleting problematic tags
 
 ---
 
+**removeDuplicates(userId, callback)**
+
+Checks and removes any duplicate tags from the online corpus
+
+`userId`: User Id
+
 ### Todo
 
 - [ ] CLI for other useful Node.js functions
