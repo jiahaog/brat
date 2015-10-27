@@ -1,8 +1,9 @@
 {
-  "name": "brat-annonator",
-  "version": "1.0.0",
-  "description": "",
+  "name": "brat",
+  "version": "0.1.0",
+  "description": "Annotate data from brat offline",
   "main": "main.js",
+  "bin": "lib/cli.js",
   "scripts": {
     "test": "mocha"
   },
@@ -10,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "^1.5.0",
+    "minimist": "^1.2.0",
     "request": "^2.65.0"
   },
   "devDependencies": {

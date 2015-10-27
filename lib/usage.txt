@@ -1,0 +1,8 @@
+Usage: brat <username> <path>
+
+Required options
+
+username           your username
+path               path to the annotated file, with noun phrases surrounded by '{' and '}'
+
+Example            brat 1000000 /dropbox/annotated.txt
