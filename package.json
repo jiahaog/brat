@@ -1,13 +1,15 @@
 {
   "name": "brat",
   "version": "0.1.0",
-  "description": "Annotate data from brat offline",
+  "description": "Annotate data from brat offline painlessly",
   "main": "main.js",
-  "bin": "lib/cli.js",
+  "bin": {
+    "brat": "lib/cli.js"
+  },
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Jia Hao",
   "license": "MIT",
   "dependencies": {
     "async": "^1.5.0",
@@ -18,5 +20,21 @@
     "chai": "^3.4.0",
     "mocha": "^2.3.3",
     "underscore": "^1.8.3"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skewedlines/brat.git"
+  },
+  "keywords": [
+    "brat",
+    "annotations"
+  ],
+  "bugs": {
+    "url": "https://github.com/skewedlines/brat/issues"
+  },
+  "homepage": "https://github.com/skewedlines/brat#readme"
 }
