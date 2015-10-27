@@ -1,6 +1,6 @@
 # Brat
 
-Annotate data from [brat](http://brat.nlplab.org) in your favourite text editor painlessly.
+Annotate data from [brat](http://brat.nlplab.org) in your text editor painlessly.
 
 ## Introduction
 
@@ -26,8 +26,7 @@ $ npm install -g brat
 
 ## Usage - Command Line
 
-Download the plain text corpus by going to the page with the data assigned to you.
-Mouseover on the top bar and click `Data` > Export (Document Data) > `txt`
+Download the plain text corpus by going to the page with the data assigned to you. Mouseover on the top bar and click `Data` > `Export (Document Data)` > `txt`
 
 With this file, you can add annotations in plain text, by separating noun phrases with `{` and `}`.
 
@@ -55,19 +54,17 @@ Note that the tags can be nested:
 
 ```
 18958 Meet {{u} outside} coop later
-
 ```
 
-IntelliJ users might be interested in `ctrl`+`alt`+`t` which wraps selected text with `{}`.
+IntelliJ users might be interested in `ctrl`+`alt`+`t` which wraps selected text with `{}`. [Similarly](http://stackoverflow.com/questions/19278057/how-to-wrap-selection-in-curly-brackets-in-sublime-text-2-with-correct-indentati) for Sublime Text users.
 
-Make sure that your parenthesis matches, and **do not add in any additional characters/whitespaces other than the `{` and `}` brackets**. Just don't.
-
+Make sure that parenthesis used are all closed, and **do not add in any additional characters/whitespaces other than the `{` and `}` annotation markers**. Just don't.
 
 ## Usage - Node.js
 
 You can use the functions with as a node module as well. The following code is synonymous with the command line command above.
 
-Add the dependency first
+Add the dependency first:
 
 ```bash
 $ npm install --save brat
@@ -82,11 +79,11 @@ brat.saveToBrat(USER_ID, ANNOTATED_FILE);
 
 ### API
 
-The node module contains additional functions that might be useful.
-
 **saveToBrat(userId, path)**
 
 *Same as above*
+
+---
 
 **deleteSpans(userId, start, end, callback)**
 
@@ -100,8 +97,17 @@ This function will remove all tags numbers ranging from `start` to the `end`.
  
 `end`: Integer, exclusive
 
+---
+
 **fixProblems(userId, callback)**
 
 Fixes problems with the corpus by detecting and deleting problematic tags
 
 `userId`: User Id
+
+---
+
+### Todo
+
+- [ ] CLI for other useful Node.js functions
+- [ ] Better checking of the annotated file
