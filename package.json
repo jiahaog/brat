@@ -14,6 +14,7 @@
   "dependencies": {
     "async": "^1.5.0",
     "minimist": "^1.2.0",
+    "normalize-newline": "^1.0.2",
     "request": "^2.65.0",
     "underscore": "^1.8.3"
   },
