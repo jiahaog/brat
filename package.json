@@ -1,6 +1,6 @@
 {
   "name": "brat",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Annotate data from brat offline painlessly",
   "main": "lib/main.js",
   "bin": {
